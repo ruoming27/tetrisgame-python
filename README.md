@@ -9,6 +9,14 @@
   <img src="screenshot.png" alt="Tetris Game Screenshot" width="600">
 </div>
 
+## Demo
+
+Play the game live here:  
+[https://ruoming27.github.io/tetrisgame-python/](https://ruoming27.github.io/tetrisgame-python/)
+
+---
+
+
 ## 🚀 Features
 
 | Feature              | Python | Web |
