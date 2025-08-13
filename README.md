@@ -21,12 +21,12 @@
 | Pause/Restart        | ✅     | ✅  |
 
 ## 📁 Project Structure
-tetris/
-├── tetris.py # Python implementation (Pygame)
-├── web/ # Web version
-│ ├── index.html # HTML structure
-│ └── tetris.js # Game logic
-├── assets/ # (Optional) Game assets
+tetris/\
+├── tetris.py # Python implementation (Pygame)\
+├── web/ # Web version\
+│ ├── index.html # HTML structure\
+│ └── tetris.js # Game logic\
+├── assets/ # (Optional) Game assets\
 └── README.md # This file
 
 
