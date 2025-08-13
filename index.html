@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #0a0a0f;
+            font-family: 'Courier New', monospace;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .game-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        canvas {
+            border: 2px solid #333;
+            background-color: #0a0a0a;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #14141c;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .next-piece {
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .game-state {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff3377;
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            color: #f0f0f0;
+        }
+
+        .stat-line {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="300" height="600"></canvas>
+        <div class="sidebar">
+            <div class="next-piece">
+                <h3>NEXT</h3>
+                <canvas id="nextCanvas" width="120" height="90"></canvas>
+            </div>
+
+            <div class="stats">
+                <div class="stat-line">Score: <span id="score">0</span></div>
+                <div class="stat-line">Lines: <span id="lines">0</span></div>
+                <div class="stat-line">Level: <span id="level">1</span></div>
+            </div>
+
+            <div class="controls">
+                <h3>Controls:</h3>
+                <div>←/→ move</div>
+                <div>↓ soft drop</div>
+                <div>↑/X rotate CW</div>
+                <div>Z rotate CCW</div>
+                <div>Space hard drop</div>
+                <div>P pause/resume</div>
+                <div>R restart</div>
+                <div>Q quit</div>
+            </div>
+
+            <div class="game-state" id="gameState"></div>
+        </div>
+    </div>
+
+    <script src="tetris.js"></script>
+</body>
+
+</html>
